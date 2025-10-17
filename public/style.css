@@ -1,0 +1,128 @@
+body {
+    background-color: #fafafa; /* Light gray background */
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.main-container {
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.login-box {
+    background-color: #fff;
+    border: 1px solid #dbdbdb; /* Light border */
+    border-radius: 1px;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+.logo-placeholder {
+    font-size: 40px;
+    font-family: 'Billabong', cursive; /* Use a font that looks like the logo if possible, otherwise a clear script font */
+    margin: 0 0 25px 0;
+    color: #262626;
+}
+
+form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+input {
+    background-color: #fafafa;
+    border: 1px solid #dbdbdb;
+    border-radius: 3px;
+    padding: 10px 8px;
+    margin-bottom: 6px;
+    font-size: 12px;
+}
+
+button {
+    background-color: #0095f6;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 8px 0;
+    font-weight: 600;
+    margin-top: 8px;
+    cursor: pointer;
+}
+
+button:disabled {
+    opacity: 0.7;
+    cursor: default;
+}
+
+/* Divider for OR */
+.divider {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin: 15px 0;
+    font-size: 13px;
+    color: #8e8e8e;
+}
+
+.line {
+    flex-grow: 1;
+    height: 1px;
+    background-color: #dbdbdb;
+}
+
+.or {
+    margin: 0 18px;
+    font-weight: 600;
+}
+
+/* Facebook Login Link */
+.facebook-login {
+    margin-bottom: 15px;
+}
+
+.facebook-login a {
+    color: #385185;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.facebook-icon {
+    font-style: normal;
+    font-weight: 900;
+    margin-right: 8px;
+}
+
+.forgot-password {
+    color: #00376b;
+    text-decoration: none;
+    font-size: 12px;
+}
+
+/* Sign Up Box */
+.signup-box {
+    background-color: #fff;
+    border: 1px solid #dbdbdb;
+    border-radius: 1px;
+    padding: 20px;
+    width: 100%;
+    text-align: center;
+    font-size: 14px;
+}
+
+.signup-box a {
+    color: #0095f6;
+    text-decoration: none;
+    font-weight: 600;
+}
